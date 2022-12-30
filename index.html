@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple JavaScript Image Slideshow | Free Projects1 </title>
+    <meta name="keywords" content="javascript image slideshow, javascript image slideshow autoplay, javascript image slideshow transition effects, best javascript image slideshow, javascript image slideshow from folder, javascript image slideshow fade effect, javascript image slideshow bootstrap, html image slideshow without javascript, background image slideshow javascript, css image slideshow without javascript, w3schools javascript image slideshow, javascript image slider animation, javascript image slider automatic, javascript auto image slideshow, javascript image slider bootstrap, javascript image background slider, javascript background image slideshow, javascript body background image slideshow, background image slideshow using javascript, add background image slideshow javascript, javascript image slideshow code, javascript image comparison slider, javascript image compare slider, css javascript image slideshow, automatic image slideshow effect in html css javascript, simple html code for image slideshow without javascript, javascript change image slideshow, create image slideshow html javascript, javascript image slider free download, javascript slideshow images, html javascript image slider, slideshow image size, js image fade slideshow, javascript for image slideshow, image slideshow from folder javascript, javascript for image slideshow automatically, simple image fade slideshow javascript, javascript background image slideshow with fade, javascript image slider github, javascript image gallery slideshow, javascript image gallery slider, image slideshow html css javascript code, javascript slideshow example, javascript image carousel examples, javascript image animation examples, image slideshow in javascript, image slideshow in html without javascript, javascript image fade in fade out slideshow, how to make background image slideshow in javascript, image slideshow with fade effect in javascript, background image slideshow in javascript, multiple image slideshow in javascript, javascript image slideshow transition, javascript photo slideshow, javascript picture slideshow, javascript slideshow gallery, javascript slideshow animation, javascript slideshow library, image slideshow with javascript, how to make image slideshow in javascript, html slideshow no javascript, how to make a slideshow in html without javascript, javascript image slider on click, javascript image slider stack overflow, image slideshow popup javascript, how to make a picture slideshow presentation, javascript image automatic slideshow, javascript random image slideshow, random image slideshow javascript, simple javascript image slideshow, javascript image slider tutorial, javascript image thumbnail slider, javascript image slider with text, image slideshow using javascript, vanilla js image slider, vanilla js slideshow, vanilla js image carousel, javascript image slider with transition effects, javascript image slider freeprojects1, javascript image slider with thumbnails, image slideshow without javascript, javascript image zoom slider, slideshow no javascript">
+    <meta name="description" content="In this project, we will show you how to create a basic JavaScript image slideshow using HTML ,CSS and JavaScript.">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slideshow()">
+    <div class="container">
+        <img id="img">
+    </div>
+    <script>
+        var i = 0;
+        function change_img(){
+            document.getElementById("img").src = "image"+(i++ % 6)+".jpg";
+        }
+        function slideshow(){
+            setInterval(change_img, 3000);
+        }
+    </script>
+</body>
+</html>
