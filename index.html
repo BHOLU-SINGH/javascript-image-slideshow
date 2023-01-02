@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="slideshow()">
+    <div class="wrapper">
+        <div class="loader">
+            <span></span>
+            <p>loading..</p>
+        </div>
+    </div>
+    
     <div class="container">
         <img id="img">
     </div>
@@ -22,6 +29,14 @@
         function slideshow(){
             setInterval(change_img, 3000);
         }
+    </script>
+    <script src="https://raw.githubusercontent.com/BHOLU-SINGH/color-generator/master/jquery-3.6.0.min.js"></script>
+    <script>
+        const fadeOut= () => {
+            const loader = document.querySelector('.wrapper');
+            loader.classList.add('fade');
+        }
+        window.addEventListener('load', fadeOut);
     </script>
 </body>
 </html>
